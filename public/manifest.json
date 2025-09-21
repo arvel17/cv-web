@@ -1,0 +1,22 @@
+{
+  "name": "Arvel Kartawijaya - Software Engineer Portfolio",
+  "short_name": "AK Portfolio",
+  "description": "Portfolio website of Arvel Kartawijaya, Software Engineer specializing in Next.js, React, TypeScript, and Supabase",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#8B5CF6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
