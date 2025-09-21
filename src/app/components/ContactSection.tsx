@@ -18,14 +18,14 @@ export default function ContactSection() {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
       >
         <motion.h2
           className="text-4xl md:text-6xl font-bold mb-6"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-pink-400 text-transparent bg-clip-text">
             Let&apos;s Work Together
@@ -37,7 +37,7 @@ export default function ContactSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           I&apos;m always open to discussing new opportunities, projects, or
           collaborations. Feel free to reach out via email or connect with me on
@@ -50,7 +50,7 @@ export default function ContactSection() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           <motion.a
             href="mailto:arvelkartawijaya@gmail.com"
@@ -96,7 +96,7 @@ export default function ContactSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           <a
             href="mailto:arvelkartawijaya@gmail.com"

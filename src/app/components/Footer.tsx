@@ -11,7 +11,7 @@ export default function Footer() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
       >
         <div className="text-gray-400 text-sm mb-4 md:mb-0">
           <p className="flex items-center gap-1">

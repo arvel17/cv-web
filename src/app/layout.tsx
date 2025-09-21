@@ -1,6 +1,7 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import ParticlesBackground from "./components/ParticlesBackground";
+import SmoothScroll from "./components/SmoothScroll";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -142,6 +143,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
       <body className="animated-bg text-white overflow-x-hidden">
+        <SmoothScroll />
         <ParticlesBackground />
         <header className="fixed top-0 w-full glass z-50">
           <nav className="container mx-auto flex justify-between items-center p-4">

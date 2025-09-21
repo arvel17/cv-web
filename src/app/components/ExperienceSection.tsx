@@ -22,7 +22,7 @@ const experiences = [
   },
   {
     company: "BINUS University",
-    role: "Final Year Project – Healthcare Appointment System",
+    role: "Final Thesis Project – Healthcare Appointment System",
     location: "Malang, Indonesia",
     date: "2025",
     details: [
@@ -48,7 +48,7 @@ export default function ExperienceSection() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
       >
         <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-pink-400 text-transparent bg-clip-text">
           EXPERIENCE
@@ -62,7 +62,7 @@ export default function ExperienceSection() {
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           {experiences.map((exp, index) => (
             <motion.button
