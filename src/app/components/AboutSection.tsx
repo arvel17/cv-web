@@ -116,8 +116,8 @@ export default function AboutSection() {
           <Image
             src="/profile.jpg"
             alt="Arvel Kartawijaya"
-            width={300}
-            height={300}
+            width={450}
+            height={450}
             className="rounded-2xl shadow-lg object-cover relative z-10 float"
           />
         </div>
