@@ -36,21 +36,21 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://arvelkartawijaya.vercel.app"), // Ganti dengan domain yang sebenarnya
+  metadataBase: new URL("https://cv-arvelk.vercel.app/"), // Ganti dengan domain yang sebenarnya
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://arvelkartawijaya.vercel.app",
+    url: "https://cv-arvelk.vercel.app/",
     title: "Arvel Kartawijaya - Software Engineer Portfolio",
     description:
       "Experienced Software Engineer specializing in Next.js, React, TypeScript, and Supabase. Fresh graduate from Bina Nusantara University with internship experience at Kalbe Farma.",
     siteName: "Arvel Kartawijaya Portfolio",
     images: [
       {
-        url: "/profile.jpg",
+        url: "https://cv-arvelk.vercel.app/profile.jpg",
         width: 1200,
         height: 630,
         alt: "Arvel Kartawijaya - Software Engineer",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "Arvel Kartawijaya - Software Engineer Portfolio",
     description:
       "Experienced Software Engineer specializing in Next.js, React, TypeScript, and Supabase.",
-    images: ["/profile.jpg"],
+    images: ["https://cv-arvelk.vercel.app/profile.jpg"],
   },
   robots: {
     index: true,
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code", // Ganti dengan kode verifikasi Google
+    google: "2-tOdih60NvMOdsl9EyuIZBeXJ9Y4zbOeiYt-OfE-BM", // Ganti dengan kode verifikasi Google
   },
 };
 
@@ -120,8 +120,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               jobTitle: "Software Engineer",
               description:
                 "Experienced Software Engineer specializing in Next.js, React, TypeScript, and Supabase",
-              url: "https://arvelkartawijaya.vercel.app",
-              image: "https://arvelkartawijaya.vercel.app/profile.jpg",
+              url: "https://cv-arvelk.vercel.app",
+              image: "https://cv-arvelk.vercel.app/profile.jpg",
               alumniOf: {
                 "@type": "EducationalOrganization",
                 name: "Bina Nusantara University",
