@@ -86,6 +86,99 @@ html {
   transition-delay: 0.5s;
 }
 
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .glass {
+    backdrop-filter: blur(8px);
+  }
+
+  /* Adjust section padding for mobile */
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  /* Better mobile typography and spacing */
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Section headings spacing */
+  .text-5xl,
+  .text-6xl {
+    font-size: 2.5rem !important;
+    margin-bottom: 2.5rem !important;
+    margin-top: 1rem !important;
+  }
+
+  /* Content spacing improvements */
+  .mb-16 {
+    margin-bottom: 2.5rem !important;
+  }
+
+  .mb-12 {
+    margin-bottom: 2rem !important;
+  }
+
+  .mb-8 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* Glass card padding for mobile */
+  .glass {
+    padding: 1rem !important;
+  }
+
+  /* Mobile flex adjustments */
+  .mobile-flex-col {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* Min height adjustments for mobile */
+  .min-h-screen {
+    min-height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  /* Mobile-specific utility classes */
+  .mobile-spacing {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Header spacing for mobile */
+  .pt-20 {
+    padding-top: 5rem !important;
+  }
+}
+
+/* Tablet responsive adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .text-5xl,
+  .text-6xl {
+    font-size: 3rem !important;
+  }
+
+  .mb-16 {
+    margin-bottom: 3rem !important;
+  }
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

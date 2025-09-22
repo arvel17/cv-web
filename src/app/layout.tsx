@@ -2,6 +2,7 @@ import "./globals.css";
 import { ReactNode } from "react";
 import ParticlesBackground from "./components/ParticlesBackground";
 import SmoothScroll from "./components/SmoothScroll";
+import Header from "./components/Header";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -145,76 +146,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="animated-bg text-white overflow-x-hidden">
         <SmoothScroll />
         <ParticlesBackground />
-        <header className="fixed top-0 w-full glass z-50">
-          <nav className="container mx-auto flex justify-between items-center p-4">
-            <h1 className="bg-gradient-to-r from-purple-400 via-blue-400 to-pink-400 text-transparent bg-clip-text text-xl font-bold">
-              A.K
-            </h1>
-            <ul className="flex gap-8 text-sm">
-              <li>
-                <a
-                  href="#about"
-                  className="relative text-gray-300 hover:text-white transition-all duration-300 group"
-                  aria-label="Navigate to About section"
-                >
-                  <span className="relative z-10 group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:via-blue-400 group-hover:to-pink-400 group-hover:text-transparent group-hover:bg-clip-text transition-all duration-300">
-                    About
-                  </span>
-                  <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 via-blue-400 to-pink-400 group-hover:w-full transition-all duration-300"></div>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#education"
-                  className="relative text-gray-300 hover:text-white transition-all duration-300 group"
-                  aria-label="Navigate to Education section"
-                >
-                  <span className="relative z-10 group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:via-blue-400 group-hover:to-pink-400 group-hover:text-transparent group-hover:bg-clip-text transition-all duration-300">
-                    Education
-                  </span>
-                  <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 via-blue-400 to-pink-400 group-hover:w-full transition-all duration-300"></div>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#experience"
-                  className="relative text-gray-300 hover:text-white transition-all duration-300 group"
-                  aria-label="Navigate to Experience section"
-                >
-                  <span className="relative z-10 group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:via-blue-400 group-hover:to-pink-400 group-hover:text-transparent group-hover:bg-clip-text transition-all duration-300">
-                    Experience
-                  </span>
-                  <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 via-blue-400 to-pink-400 group-hover:w-full transition-all duration-300"></div>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#skills"
-                  className="relative text-gray-300 hover:text-white transition-all duration-300 group"
-                  aria-label="Navigate to Skills section"
-                >
-                  <span className="relative z-10 group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:via-blue-400 group-hover:to-pink-400 group-hover:text-transparent group-hover:bg-clip-text transition-all duration-300">
-                    Skills
-                  </span>
-                  <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 via-blue-400 to-pink-400 group-hover:w-full transition-all duration-300"></div>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="relative text-gray-300 hover:text-white transition-all duration-300 group"
-                  aria-label="Navigate to Contact section"
-                >
-                  <span className="relative z-10 group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:via-blue-400 group-hover:to-pink-400 group-hover:text-transparent group-hover:bg-clip-text transition-all duration-300">
-                    Contact
-                  </span>
-                  <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 via-blue-400 to-pink-400 group-hover:w-full transition-all duration-300"></div>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <main className="pt-20">{children}</main>
+        <Header />
+        <main className="pt-24 md:pt-20">{children}</main>
       </body>
     </html>
   );

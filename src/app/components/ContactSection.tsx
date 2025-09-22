@@ -7,7 +7,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="min-h-screen flex flex-col justify-center items-center px-8 text-white text-center relative"
+      className="min-h-screen flex flex-col justify-center items-center px-4 md:px-8 py-8 md:py-0 text-white text-center relative"
     >
       {/* Decorative elements */}
       <div className="absolute top-20 left-20 w-32 h-32 bg-purple-500/10 rounded-full blur-xl"></div>
@@ -21,7 +21,7 @@ export default function ContactSection() {
         viewport={{ once: false }}
       >
         <motion.h2
-          className="text-4xl md:text-6xl font-bold mb-6"
+          className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}

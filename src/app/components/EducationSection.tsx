@@ -29,10 +29,10 @@ export default function EducationSection() {
   return (
     <section
       id="education"
-      className="min-h-screen flex flex-col justify-center px-8 text-white"
+      className="min-h-screen flex flex-col justify-center px-4 md:px-8 py-8 md:py-0 text-white"
     >
       <motion.h2
-        className="text-5xl md:text-6xl font-bold mb-16 text-center"
+        className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-16 text-center"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
